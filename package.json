@@ -1,17 +1,22 @@
 {
   "name": "solarstatsplugintemplate",
   "version": "1.0.0",
-  "description": "",
+  "description": "Template plugin for SolarStats",
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch",
     "build": "webpack"
   },
   "keywords": [],
-  "author": "",
+  "author": "YourName",
   "license": "ISC",
   "devDependencies": {
     "webpack": "^5.74.0",
     "webpack-cli": "^4.10.0"
+  },
+  "solarstats": {
+    "displayName": "PluginTemplate",
+    "devPath": "/path/to/solarstats/plugins"
   }
 }

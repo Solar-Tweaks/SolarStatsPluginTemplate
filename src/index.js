@@ -1,6 +1,6 @@
 registerPlugin({
-  name: 'template',
-  description: 'Template plugin',
-  version: '1.0.0',
-  author: 'You',
+  name: __package.name,
+  description: __package.description,
+  version: __package.version,
+  author: __package.author,
 });
