@@ -4,14 +4,17 @@
   "description": "Template plugin for SolarStats",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "webpack --watch",
-    "build": "webpack"
+    "build": "webpack",
+    "postinstall": "node removeTypes.js"
   },
   "keywords": [],
   "author": "YourName",
   "license": "ISC",
   "devDependencies": {
+    "@minecraft-js/chat": "^1.0.0",
+    "axios": "^0.26.0",
+    "node-fetch": "^3.3.1",
     "webpack": "^5.74.0",
     "webpack-cli": "^4.10.0"
   },
