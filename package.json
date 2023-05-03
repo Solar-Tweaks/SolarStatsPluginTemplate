@@ -5,8 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "watch": "webpack --watch",
-    "build": "webpack",
-    "postinstall": "node removeTypes.js"
+    "build": "webpack"
   },
   "keywords": [],
   "author": "YourName",
