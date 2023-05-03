@@ -13,22 +13,22 @@ import { StringComponentBuilder } from '@minecraft-js/chat';
 export {};
 
 declare global {
-  const toolbox: Toolbox;
-  const player: Player;
+  var toolbox: Toolbox;
+  var player: Player;
 
-  const __package: PluginInfo;
-  const __cwd: string;
-  const __plugins: string;
+  var __package: PluginInfo;
+  var __cwd: string;
+  var __plugins: string;
 
-  const Logger: LoggerClass;
+  var Logger: LoggerClass;
 
-  function registerPlugin(plugin: PluginInfo): void;
-  function registerCommand(command: Command): void;
-  function registerPlayerModule(module: PlayerModule): void;
-  function requireModule(module: string): any;
+  var registerPlugin: (plugin: PluginInfo) => void;
+  var registerCommand: (command: Command) => void;
+  var registerPlayerModule: (module: PlayerModule) => void;
+  var requireModule: (module: string) => any;
 
-  const dirFetch: typeof fetch;
-  const axios: Axios;
+  var dirFetch: typeof fetch;
+  var axios: Axios;
 }
 
 interface Toolbox {
